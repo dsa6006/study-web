@@ -1,0 +1,66 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: 0px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 10px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    border-bottom: 1px solid rgb(136, 136, 136);
+}
+
+.icon {
+    padding: 0 20px;
+}
+
+main {
+    padding: 0 10px;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    position: relative;
+    top: 60px;
+    padding: 5px 0;
+    grid-column-gap: 20px;
+}
+
+nav {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    z-index: 1;
+    background-color: white;
+    padding: 10px;
+    border-top: 1px solid rgb(136, 136, 136);
+}
+
+.poto {
+    grid-row: 1 / 2 span;
+}
+
+.name {
+    grid-column: 2 / 8 span;
+}
+
+.soge {
+    grid-column: 2 / 8 span;
+    font-size: 13px;
+}
+
+img {
+    border-radius: 50%;
+}

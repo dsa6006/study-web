@@ -1,0 +1,74 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(250, 157, 157);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    background-color: rgb(250, 124, 102);
+    text-align: center;
+    /* li 자체가 가운데로 오게 한것 */
+}
+
+/* 이 친구가 ul */
+nav .menu {
+    list-style-type: none;
+    display: inline-block;
+}
+
+/* ul에 있는 모든 하이퍼링크 */
+nav .menu a {
+    text-decoration: none;
+    color:white;
+    font-size: 17px;
+    display: inline-block;
+    padding: 16px;
+}
+
+/* ul안에 있는 li(home, html, css, react, django) */
+nav .menu li {
+    position: relative;
+    display: inline-block;
+}
+
+/* ul에 있는 li안에있는 div */
+nav .menu .dropdown-content {
+    position: absolute;
+    background-color: rgb(250, 124, 102);
+    min-width: 89px;
+    display: none;
+    /* 최소 이정도 넓이를 잡은것 */
+}
+
+/* ul안에 li안에 div안에 하이퍼링크(link 1,2,3) */
+nav .menu .dropdown-content a {
+    display: block;
+    text-align: left;
+}
+
+nav .menu li:hover .dropdown-content{
+    display: block;
+}
+
+nav .menu li:hover {
+    background-color: rgb(247, 172, 159);
+}
+
+/* 화면의 움직임을 읽을 수 있음. (줄어들고 늘어나는것) */
+@media(max-width:500px) {
+    nav .menu li {
+        display: block;
+    }
+    nav .menu .dropdown-content {
+        position: relative;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        nav li a {
+            color: brown;
+            text-decoration: none;
+        }
+        nav .menu {
+            list-style-type: none;
+        }
+        nav > .menu > li {
+            display: inline-block;
+            padding: 0 10px;
+        }
+        /* .dropdown {
+            display: none;
+        } */
+        .list {
+            position: relative;
+        }
+        .dropdown {
+            position:absolute;
+            top: 20px;
+            display: none;
+            list-style-type: none;
+        }
+        /* 가상선택자 */
+        .list:hover .dropdown {
+            display:block;
+        }
+        .menu li:hover {
+            background-color:plum;
+        } 
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li class="list"><a href="#">Product</a>
+                <ul class="dropdown">
+                    <li><a href="#">Sliders</a></li>
+                    <li><a href="#">Galleries</a></li>
+                    <li><a href="#">Apps</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Address</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
