@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="clock">
+
+    </div>
+    <script>
+    function startClock() {
+    let d = new Date();
+    console.log(d);
+    let year = d.getFullYear();
+    console.log(year);
+    let month = d.getMonth()+1; //그래서 +1을 해줌
+    console.log(month); // 0은 1월, 1은 2월~ 11이 12월
+    let date = d.getDate();
+    console.log(date);
+    let hour = d.getHours();
+    console.log(hour);
+    let min = d.getMinutes();
+    console.log(min);
+    let sec = d.getSeconds();
+    console.log(sec); // .은 오브젝트가 들고있는 function
+    let clock = document.querySelector("#clock"); //화면으로 불러오기위해서
+    clock.innerHTML = hour + "시" + min + "분" + sec + "초";
+    }
+
+    //주기적으로 반복시킬수있음. (두가지 인수를 넣을 수 있음)
+    //1. 실행할 함수이름 2. 주기(단위:밀리세컨즈 = 1/1000 => 1000 = 1초)
+    setInterval(startClock, 1000);
+    </script>
+</body>
+</html>
