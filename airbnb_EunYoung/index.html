@@ -7,45 +7,51 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>숙소, 트립, 장소를 모두 한 곳에서 - 에어비앤비</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav>
-            <div><img src="images/logo.png" width="30px"></div>
+            <div><a href="#"><img src="images/logo.png" width="30px"></a></div>
             <div>
-                <div class="manu">호스트가 되어보세요</div>
-                <div class="manu">도움말</div>
-                <div class="manu">회원 가입</div>
-                <div class="manu">로그인</div>
+                <ul class="manu">
+                    <li><a href="#">호스트가 되어보세요</a></li>
+                    <li><a href="#">도움말</a></li>
+                    <li><a href="#">회원 가입</a></li>
+                    <li><a href="#">로그인</a></li>     
+                </ul>
             </div>
         </nav>
         <section>
             <div class="search1">
                 <h1>특색 있는 숙소와 트립을 <br>예약해보세요.</h1>
-                목적지<br>
-                <input type="text">
                 <br>
-                체크인 체크아웃
+                <span>목적지</span>
+                <br>
+                <input type="text" value="모든 위치">
+                <br>
+                <span>체크인</span> <span>체크아웃</span>
                 <br>
                 <input type="date">
                 <input type="date">
                 <br>
                 <div>
-                    <div>인원
-                        <div>
+                    <span>인원</span>
+                    <div class="inone"><input type="text" value="인원" class="inone2">
+                        <div class="drop_down">
                             <div>성인</div>
-                            <div><input type="button" value="-"><input type="button" value="+"></div>
-                            <div>어린이 (2~12세)</div>
-                            <div><input type="button" value="-"><input type="button" value="+"></div>
-                            <div>유아 (2세 미만)</div>
-                            <div><input type="button" value="-"><input type="button" value="+"></div>
+                            <div><input type="button" value="-"> 0 <input type="button" value="+"></div>
+                            <div>어린이<br>(2~12세)</div>
+                            <div><input type="button" value="-"> 0 <input type="button" value="+"></div>
+                            <div>유아<br>(2세 미만)</div>
+                            <div><input type="button" value="-"> 0 <input type="button" value="+"></div>
                         </div>
-                        <input type="button" value="적용">
+                        <input type="button" value="적용" name="jeck">
                     </div>
                 </div>
                 <br>
-                <input type="submit" value="검색">
+                <input type="submit" value="검색" name="gem">
             </div>
         </section>
     </header>
@@ -55,9 +61,9 @@
                 <h2>에어비앤비 둘러보기</h2>
             </div>
             <div class="look_round">
-                <div class="round1"><img src="https://a0.muscache.com/im/pictures/8b7519ec-2c82-4c09-8233-fd4d2715bbf9.jpg" width="96px" height="72px">숙소</div>
-                <div class="round1"><img src="https://a0.muscache.com/im/pictures/cb8b3101-d419-4c17-8e2f-4989b39b98c3.jpg" width="96px" height="72px">트립</div>
-                <div class="round1"><img src="https://a0.muscache.com/im/pictures/da2d8e97-90b7-409f-94ac-5ab0327c289b.jpg" width="96px" height="72px">레스토랑</div>
+                <a href="#"><div class="round1"><img src="https://a0.muscache.com/im/pictures/8b7519ec-2c82-4c09-8233-fd4d2715bbf9.jpg"><span>숙소</span></div></a>
+                <a href="#"><div class="round1"><img src="https://a0.muscache.com/im/pictures/cb8b3101-d419-4c17-8e2f-4989b39b98c3.jpg"><span>트립</span></div></a>
+                <a href="#"><div class="round1"><img src="https://a0.muscache.com/im/pictures/da2d8e97-90b7-409f-94ac-5ab0327c289b.jpg"><span>레스토랑</span></div></a>
             </div>
         </section>
         <section>
@@ -66,24 +72,34 @@
             </div>
             <div class="room_option">
                 <div>
-                    <img src="https://a0.muscache.com/im/pictures/ffedf2df-8778-46f8-af67-821d6f75636b.jpg" width="333.33px" height="208.33px">
+                    <a href="#">
+                    <img src="https://a0.muscache.com/im/pictures/ffedf2df-8778-46f8-af67-821d6f75636b.jpg" width="333.33px"
+                        height="208.33px">
                     <div class="room1">집 전체 숙소</div>
                     <div class="room2">필요한 편의시설이 모두 갖춰진 숙소에서 <br> 친구들 또는 가족과 함께 머물러보세요.</div>
+                    </a>
                 </div>
                 <div>
-                    <img src="https://a0.muscache.com/im/pictures/2ace1dfd-06a9-4f1b-8e7b-3d446d5ef629.jpg" width="333.33px" height="208.33px">
+                        <a href="#">
+                    <img src="https://a0.muscache.com/im/pictures/2ace1dfd-06a9-4f1b-8e7b-3d446d5ef629.jpg" width="333.33px"
+                        height="208.33px">
                     <div class="room1">에어비앤비 플러스 숙소</div>
                     <div class="room2">편안함과 퀄리티가 검증된 새로운 숙소 컬렉션</div>
+                    </a>
                 </div>
                 <div>
-                    <img src="https://a0.muscache.com/im/pictures/02056f53-7a40-40ee-a294-70cd68d9ae8a.jpg" width="333.33px" height="208.33px">
+                        <a href="#">
+                    <img src="https://a0.muscache.com/im/pictures/02056f53-7a40-40ee-a294-70cd68d9ae8a.jpg" width="333.33px"
+                        height="208.33px">
                     <div class="room1">부티크 호텔</div>
                     <div class="room2">세심한 서비스와 현지의 특색을 살린 편안함</div>
+                    </a>
                 </div>
             </div>
         </section>
         <section>
             <h2>에어비앤비의 인기 만점 숙소</h2>
+            <a href="#">
             <div class="popul">
                 <div>
                     <h1>2019년 가장 많이 저장된 숙소</h1>
@@ -91,7 +107,7 @@
                     <br>
                     <input type="button" value="숙소 둘러보기">
                 </div>
-            </div>
+            </div></a>
         </section>
         <section>
             <div>
@@ -100,63 +116,134 @@
             </div>
             <div class="trip">
                 <div>
-                    <img src="https://a0.muscache.com/im/pictures/7045c7ca-e603-42f4-9cef-8057d387f12a.jpg" width="250px" height="150px">
-                    <div>암벽하강 &middot; 세인트조지</div>
-                    <div>Private East Zion Slot Canyon <br>Tour</div>
-                    <div>1인당 &#8361;160,478</div>
-                    <span>4.99</span><span>215</span>
+                    <a href="#">
+                        <img src="https://a0.muscache.com/im/pictures/7045c7ca-e603-42f4-9cef-8057d387f12a.jpg" width="250px"
+                            height="150px">
+                        <div class="trip_name">암벽하강 &middot; 세인트조지</div>
+                        <div class="trip_loc">Private East Zion Slot Canyon <br>Tour</div>
+                        <div class="trip_money">1인당 &#8361;160,478</div>
+                        <span class="trip_sco">4.99</span>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <span class="trip_sco">215</span>
+                    </a>
                 </div>
                 <div>
-                    <img src="https://a0.muscache.com/im/pictures/18c5d39e-e98d-4d3b-a9d1-9101cd2596ed.jpg" width="250px" height="150px">
-                    <div>등산 &middot; 쿠알라룸푸르</div>
-                    <div>Waterfalls Hiking + Batu <br> Caves</div>
-                    <div>1인당 &#8361;53,374</div>
-                    <span>4.99</span><span>265</span>
+                    <a href="#">
+                        <img src="https://a0.muscache.com/im/pictures/18c5d39e-e98d-4d3b-a9d1-9101cd2596ed.jpg" width="250px"
+                            height="150px">
+                        <div class="trip_name">등산 &middot; 쿠알라룸푸르</div>
+                        <div class="trip_loc">Waterfalls Hiking + Batu <br> Caves</div>
+                        <div class="trip_money">1인당 &#8361;53,374</div>
+                        <span class="trip_sco">4.99</span>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <span class="trip_sco">265</span>
+                    </a>
                 </div>
                 <div>
-                    <img src="https://a0.muscache.com/im/pictures/2f7a177d-9ce9-41a3-ad3a-b80c4c706d08.jpg" width="250px" height="150px">
-                    <div>자전거 타기 체험 &middot; 방콕</div>
-                    <div>Cycle and Snack through <br> hidden Bangkok</div>
-                    <div>1인당 &#8361;54,551</div>
-                    <span>4.99</span><span>698</span>
+                    <a href="#">
+                        <img src="https://a0.muscache.com/im/pictures/2f7a177d-9ce9-41a3-ad3a-b80c4c706d08.jpg" width="250px"
+                            height="150px">
+                        <div class="trip_name">자전거 타기 체험 &middot; 방콕</div>
+                        <div class="trip_loc">Cycle and Snack through <br> hidden Bangkok</div>
+                        <div class="trip_money">1인당 &#8361;54,551</div>
+                        <span class="trip_sco">4.99</span>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <span class="trip_sco">698</span>
+                    </a>
                 </div>
                 <div>
-                    <img src="https://a0.muscache.com/im/pictures/283bc149-6173-4a3d-b44b-d96270d9dfeb.jpg" width="250px" height="150px">
-                    <div>워크숍 &middot; 내쉬빌</div>
-                    <div>Silver smith a stack of rings</div>
-                    <div>1인당 &#8361;69,271</div>
-                    <span>5.0</span><span>62</span>
+                    <a href="#">
+                        <img src="https://a0.muscache.com/im/pictures/283bc149-6173-4a3d-b44b-d96270d9dfeb.jpg" width="250px"
+                            height="150px">
+                        <div class="trip_name">워크숍 &middot; 내쉬빌</div>
+                        <div class="trip_loc">Silver smith a stack of rings</div><br>
+                        <div class="trip_money">1인당 &#8361;69,271</div>
+                        <span class="trip_sco">5.0</span>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <span class="trip_sco">62</span>
+                    </a>
                 </div>
                 <div>
-                    <img src="https://a0.muscache.com/im/pictures/aa08e89f-3eea-43a7-a2af-0a8c37453e1c.jpg" width="250px" height="150px">
-                    <div>등산 &middot; 시칠리아</div>
-                    <div>Exploring Sicily's Mount Etna <br> Volcano</div>
-                    <div>1인당 &#8361;77,664</div>
-                    <span>4.95</span><span>168</span>
+                    <a href="#">
+                        <img src="https://a0.muscache.com/im/pictures/aa08e89f-3eea-43a7-a2af-0a8c37453e1c.jpg" width="250px"
+                            height="150px">
+                        <div class="trip_name">등산 &middot; 시칠리아</div>
+                        <div class="trip_loc">Exploring Sicily's Mount Etna <br> Volcano</div>
+                        <div class="trip_money">1인당 &#8361;77,664</div>
+                        <span class="trip_sco">4.95</span>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <span class="trip_sco">168</span>
+                    </a>
                 </div>
                 <div>
-                    <img src="https://a0.muscache.com/im/pictures/218677bc-e18e-402a-baab-68b690fe8668.jpg" width="250px" height="150px">
-                    <div>쿠킹 클래스 &middot; 피렌체</div>
-                    <div>Cooking class in the Chianti <br> Hills</div>
-                    <div>1인당 &#8361;156,643</div>
-                    <span>5.0</span><span>1121</span>
+                    <a href="#">
+                        <img src="https://a0.muscache.com/im/pictures/218677bc-e18e-402a-baab-68b690fe8668.jpg" width="250px"
+                            height="150px">
+                        <div class="trip_name">쿠킹 클래스 &middot; 피렌체</div>
+                        <div class="trip_loc">Cooking class in the Chianti <br> Hills</div>
+                        <div class="trip_money">1인당 &#8361;156,643</div>
+                        <span class="trip_sco">5.0</span>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <span class="trip_sco">1121</span>
+                    </a>
                 </div>
                 <div>
-                    <img src="https://a0.muscache.com/im/pictures/ad6d7e9c-c834-4f5d-a5f5-dfd9fd8a2c3e.jpg" width="250px" height="150px">
-                    <div>카야킹 &middot; 시드니</div>
-                    <div>Harbour Kayak Adventure</div>
-                    <div>1인당 &#8361;82,968</div>
-                    <span>4.96</span><span>351</span>
+                    <a href="#">
+                        <img src="https://a0.muscache.com/im/pictures/ad6d7e9c-c834-4f5d-a5f5-dfd9fd8a2c3e.jpg" width="250px"
+                            height="150px">
+                        <div class="trip_name">카야킹 &middot; 시드니</div>
+                        <div class="trip_loc">Harbour Kayak Adventure</div><br>
+                        <div class="trip_money">1인당 &#8361;82,968</div>
+                        <span class="trip_sco">4.96</span>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <span class="trip_sco">351</span>
+                    </a>
                 </div>
                 <div>
-                    <img src="https://a0.muscache.com/im/pictures/a97ad785-8f14-43a9-bc3b-09fa21424336.jpg" width="250px" height="150px">
-                    <div>당일여행 &middot; 시드니</div>
-                    <div>Hunter Valley Wine,Cheese &#38; <br> Kangaroos</div>
-                    <div>1인당 &#8361;198,293</div>
-                    <span>4.97</span><span>192</span>
+                    <a href="#">
+                        <img src="https://a0.muscache.com/im/pictures/a97ad785-8f14-43a9-bc3b-09fa21424336.jpg" width="250px"
+                            height="150px">
+                        <div class="trip_name">당일여행 &middot; 시드니</div>
+                        <div class="trip_loc">Hunter Valley Wine,Cheese &#38; <br> Kangaroos</div>
+                        <div class="trip_money">1인당 &#8361;198,293</div>
+                        <span class="trip_sco">4.97</span>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <i class="material-icons" style="font-size:15px">star</i>
+                        <span class="trip_sco">192</span>
+                    </a>
                 </div>
             </div>
-            <div>트립 모두 보기 &gt;</div>
         </section>
     </main>
 </body>
