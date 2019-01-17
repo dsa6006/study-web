@@ -11,7 +11,8 @@
 
     </div>
     <script>
-    function startClock() {
+    function startClock() { 
+    //function 밖에 있으면 항상 실행되기때문에 내가 제어할수없음
     let d = new Date();
     console.log(d);
     let year = d.getFullYear();
@@ -32,7 +33,7 @@
 
     //주기적으로 반복시킬수있음. (두가지 인수를 넣을 수 있음)
     //1. 실행할 함수이름 2. 주기(단위:밀리세컨즈 = 1/1000 => 1000 = 1초)
-    setInterval(startClock, 1000);
+    setInterval(startClock, 1000); //괄호를 넣으면 바로 실행한다는 뜻.startClock()
     </script>
 </body>
 </html>
