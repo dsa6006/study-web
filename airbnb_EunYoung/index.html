@@ -29,7 +29,7 @@
                 <br>
                 <span>목적지</span>
                 <br>
-                <input type="text" value="모든 위치">
+                <input type="text" value="모든 위치" name="long">
                 <br>
                 <span>체크인</span> <span>체크아웃</span>
                 <br>
@@ -38,14 +38,14 @@
                 <br>
                 <div>
                     <span>인원</span>
-                    <div class="inone"><input type="text" value="인원" class="inone2">
+                    <div class="inone"><input type="text" value="인원" name="long">
                         <div class="drop_down">
                             <div>성인</div>
-                            <div><input type="button" value="-"> 0 <input type="button" value="+"></div>
+                            <form><input type="button" value="-" onclick="change(-1)"><input type="text" class="count" value="0"><input type="button" value="+" onclick="change(1)"></form>
                             <div>어린이<br>(2~12세)</div>
-                            <div><input type="button" value="-"> 0 <input type="button" value="+"></div>
+                            <div><input type="button" value="-"><span class="count"> 0 </span><input type="button" value="+"></div>
                             <div>유아<br>(2세 미만)</div>
-                            <div><input type="button" value="-"> 0 <input type="button" value="+"></div>
+                            <div><input type="button" value="-"><span class="count"> 0 </span><input type="button" value="+"></div>
                         </div>
                         <input type="button" value="적용" name="jeck">
                     </div>
@@ -246,6 +246,7 @@
             </div>
         </section>
     </main>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
