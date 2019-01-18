@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>회원가입</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            text-align: center;
+            padding: 250px 0;
+            background-color: gray;
+        }
+
+        .all {
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+            display: inline-block;
+            width: 550px;
+            height: 400px;
+        }
+
+        .material-icons {
+            margin-top: 5px;
+            margin-right: 93%;
+        }
+
+        .link1 {
+            text-decoration: none;
+            color:gray;
+        }
+        .link2 {
+            color:green;
+            font-weight: bold;
+        }
+
+        .face {
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(0, 76, 218, 0.767);
+            color: white;
+            font-weight: bold;
+            width: 500px;
+            height: 50px;
+            margin: 10px 0;
+            margin-left: 6px;
+            outline: none;
+            position: relative;
+        }
+
+        .face:active {
+            border: 2px solid rgba(0, 76, 218, 0.767);
+            color: black;
+            background-color: white;
+        }
+
+        .goo {
+            border: 2px solid gray;
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            width: 500px;
+            height: 50px;
+            margin: 10px 0;
+            outline: none;
+            position: relative;
+        }
+
+        .goo:active {
+            border:none;
+            background-color: gray;
+            color: white;
+        }
+
+        .short {
+            display: inline-block;
+            width: 228px;
+            margin-bottom: 5px;
+        }
+
+        .long {
+            width: 500px;
+            margin-left: 25px;
+        }
+
+        .email {
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 99, 71, 0.897);
+            color: white;
+            font-weight: bold;
+            width: 500px;
+            height: 50px;
+            margin: 15px 0;
+            outline: none;
+            position: relative;
+        }
+
+        .email:active {
+            border: 2px solid rgba(255, 99, 71, 0.897);
+            color: black;
+            background-color: white;
+        }
+
+        .face .logo1 {
+            position: absolute;
+            margin: -12px -45px;
+        }
+
+        .goo .logo2 {
+            position: absolute;
+            margin: -7px -38px;
+            width: 30px;
+            height: 30px;
+        }
+
+        .email .logo3 {
+            position: absolute;
+            margin: -7px -38px;
+            width: 30px;
+            height: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <a href="index.html" class="link1"><i class="material-icons">close</i></a>
+        <br>
+        <button class="face"><img src="https://img.icons8.com/color/40/000000/facebook.png" class="logo1">페이스북 계정으로 로그인</button>
+        <br>
+        <button class="goo"><img src="images/google.png" class="logo2">구글 계정으로 로그인</button>
+        <hr class="short"> <span>또는</span>
+        <hr class="short">
+        <button class="email"><img src="images/email_icon.png" class="logo3">이메일로 회원가입</button>
+        <hr class="long">
+        <br>
+        <span>이미 에어비앤비 계정이 있나요?</span>
+        <a href="signin.html" class="link2">로그인</a>
+    </div>
+</body>
+
+</html>

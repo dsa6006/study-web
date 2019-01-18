@@ -18,8 +18,8 @@
                 <ul class="manu">
                     <li><a href="#">호스트가 되어보세요</a></li>
                     <li><a href="#">도움말</a></li>
-                    <li><a href="#">회원 가입</a></li>
-                    <li><a href="#">로그인</a></li>     
+                    <li><a href="signup.html">회원 가입</a></li>
+                    <li><a href="signin.html">로그인</a></li>
                 </ul>
             </div>
         </nav>
@@ -29,29 +29,30 @@
                 <br>
                 <span>목적지</span>
                 <br>
-                <input type="text" value="모든 위치" name="long">
+                <input type="text" placeholder="모든 위치" name="loc">
                 <br>
-                <span>체크인</span> <span>체크아웃</span>
+                <div class="in">체크인</div> <div class="out">체크아웃</div>
                 <br>
-                <input type="date">
-                <input type="date">
+                <input type="date" name="check_in">
+                <input type="date" name="check_out">
                 <br>
                 <div>
                     <span>인원</span>
-                    <div class="inone"><input type="text" value="인원" name="long">
+                    <div class="inone"><input type="text" value="인원" readonly>
                         <div class="drop_down">
                             <div>성인</div>
-                            <form><input type="button" value="-" onclick="change(-1)"><input type="text" class="count" value="0"><input type="button" value="+" onclick="change(1)"></form>
+                            <form><input type="button" class="but1" value="-"><span> 0 </span><input type="button"  class="but1" value="+"></form>
                             <div>어린이<br>(2~12세)</div>
-                            <div><input type="button" value="-"><span class="count"> 0 </span><input type="button" value="+"></div>
+                            <div><input type="button" class="but1" value="-"><span class="count"> 0 </span><input type="button"  class="but1" value="+"></div>
                             <div>유아<br>(2세 미만)</div>
-                            <div><input type="button" value="-"><span class="count"> 0 </span><input type="button" value="+"></div>
+                            <div><input type="button" class="but1" value="-"><span class="count"> 0 </span><input type="button"  class="but1" value="+"></div>
+                            <br>
+                            <input type="button" value="적용" class="jek">
                         </div>
-                        <input type="button" value="적용" name="jeck">
                     </div>
                 </div>
                 <br>
-                <input type="submit" value="검색" name="gem">
+                <input type="submit" value="검색" class="gem">
             </div>
         </section>
     </header>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>로그인</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            text-align: center;
+            padding: 250px 0;
+            background-color: gray;
+        }
+
+        .all {
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+            display: inline-block;
+            width: 550px;
+            height: 600px;
+        }
+
+        .material-icons {
+            margin-top: 5px;
+            margin-right: 93%;
+        }
+
+        .link1 {
+            text-decoration: none;
+            color: gray;
+        }
+
+        .link2 {
+            text-decoration: none;
+            color: green;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .link3 {
+            text-decoration: none;
+            color: green;
+            font-weight: bold;
+        }
+
+        .face {
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(0, 76, 218, 0.767);
+            color: white;
+            font-weight: bold;
+            width: 500px;
+            height: 50px;
+            margin: 10px 0;
+            margin-left: 6px;
+            outline: none;
+            position: relative;
+        }
+
+        .face:active {
+            border: 2px solid rgba(0, 76, 218, 0.767);
+            color: black;
+            background-color: white;
+        }
+
+        .goo {
+            border: 2px solid gray;
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            width: 500px;
+            height: 50px;
+            margin: 10px 0;
+            outline: none;
+            position: relative;
+        }
+
+        .goo:active {
+            border: none;
+            background-color: gray;
+            color: white;
+        }
+
+        .short {
+            display: inline-block;
+            width: 228px;
+            margin-bottom: 5px;
+        }
+
+        .long {
+            width: 500px;
+            margin-left: 25px;
+            margin-bottom: 10px;
+        }
+
+        .login {
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 99, 71, 0.897);
+            color: white;
+            font-weight: bold;
+            width: 500px;
+            height: 50px;
+            margin: 15px 0;
+            outline: none;
+            position: relative;
+        }
+
+        .login:active {
+            border: 2px solid rgba(255, 99, 71, 0.897);
+            color: black;
+            background-color: white;
+        }
+
+        .face .logo1 {
+            position: absolute;
+            margin: -12px -45px;
+        }
+
+        .goo .logo2 {
+            position: absolute;
+            margin: -7px -38px;
+            width: 30px;
+            height: 30px;
+        }
+
+        input[type="text"] {
+            width: 500px;
+            height: 50px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            outline: none;
+            margin: 20px 0;
+        }
+
+        input[type="password"] {
+            width: 500px;
+            height: 50px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            outline: none;
+            margin: -15px 0;
+        }
+
+        .check {
+            margin: 20px 30px;
+            text-align: left;
+        }
+
+        .email_icon img {
+            display: inline-block;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            margin-top: 35px;
+            margin-left: -30px;
+        }
+
+        .pw_icon img {
+            display: inline-block;
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            margin-top: 0px;
+            margin-left: -35px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <a href="http://127.0.0.1:5500/airbnb_EunYoung/index.html" class="link1"><i class="material-icons">close</i></a>
+        <br>
+        <button class="face">
+            <img src="https://img.icons8.com/color/40/000000/facebook.png" class="logo1">
+            페이스북 계정으로 로그인
+        </button>
+        <br>
+        <button class="goo">
+            <img src="images/google.png" class="logo2">
+            구글 계정으로 로그인
+        </button>
+        <hr class="short"> <span>또는</span> <hr class="short">
+        <div class="email_icon">
+            <input type="text" placeholder="이메일 주소" name="email">
+            <img src="images/email_icon2.png">
+        </div>
+        <br>
+        <div class="pw_icon">
+        <input type="password" placeholder="비밀번호" name="pw">
+            <img src="images/lock.png">
+        </div>
+        <br>
+        <div class="check">
+            <input type="checkbox" name="email">
+            비밀번호 저장
+        </div>
+        <br>
+        <a href="#" class="link2">전화번호로 로그인</a> &middot; <a href="#" class="link2">비밀번호가 생각나지 않으세요?</a>
+        <a href="index.html"><button class="login">로그인</button></a>
+        <hr class="long">
+        <span>에어비앤비 계정이 없으세요?</span>
+        <a href="signup.html" class="link3">회원 가입</a>
+    </div>
+</body>
+
+</html>
